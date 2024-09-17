@@ -19,12 +19,13 @@ function App() {
           <Route
             path="/"
             element={
-              <FinancialRecordsProvider>
-                <Dashboard />
-              </FinancialRecordsProvider>
+              <Auth />
             }
           />
-          <Route path="/auth" element={<Auth />} />
+          <Route path="/" element={
+            <FinancialRecordsProvider>
+              <Dashboard />
+            </FinancialRecordsProvider>} />
         </Routes>
       </div>
     </BrowserRouter>
