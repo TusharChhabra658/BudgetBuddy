@@ -12,7 +12,7 @@ if(!PUBLISHABLE_KEY){
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+    <ClerkProvider publishableKey= "pk_test_bWludC1zaWxrd29ybS03NC5jbGVyay5hY2NvdW50cy5kZXYk">
       <App />
     </ClerkProvider>
   </StrictMode>
