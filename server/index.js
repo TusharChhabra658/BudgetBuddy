@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(cors(
     {
-        origin: ["https://budget-buddy-coral.vercel.app/"],
+        origin: "https://budget-buddy-coral.vercel.app",
         methods: ["POST", "GET", "PUT", "DELETE"],
         allowedHeaders: ['Content-Type'],
         credentials: true
