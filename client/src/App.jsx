@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Auth from './pages/auth/auth';
+import Auth from './pages/auth/Auth';
 import { FinancialRecordsProvider } from "./contexts/financial-record-context";
 import Dashboard from './pages/dashboard/Dashboard';
 import { SignedIn, UserButton } from "@clerk/clerk-react";
