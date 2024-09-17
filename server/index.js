@@ -7,13 +7,13 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
-app.use(cors(
-    {
-        origin: ["https://budget-buddy-coral.vercel.app/"],
-        methods: ["POST", "GET", "PUT", "DELETE"],
-        credentials: true
-    }
-));
+// app.use(cors(
+//     {
+//         origin: ["https://budget-buddy-coral.vercel.app/"],
+//         methods: ["POST", "GET", "PUT", "DELETE"],
+//         credentials: true
+//     }
+// ));
 app.use("/financial-records", financialRecordRouter);
 
 const MONGO_URI = "mongodb+srv://tusharchhabra658:SJGyGqPpVl6x5JYF@budgetbuddydb.1w5ug.mongodb.net/";
