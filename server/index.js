@@ -4,16 +4,16 @@ const cors = require("cors");
 const financialRecordRouter = require("./routes/financial-records");
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = 3001;
 
 app.use(express.json());
 app.use(cors(
-    {
-        origin: "https://budget-buddy-coral.vercel.app",
-        methods: ["POST", "GET", "PUT", "DELETE"],
-        allowedHeaders: ['Content-Type'],
-        credentials: true
-    }
+    // {
+    //     origin: "https://budget-buddy-coral.vercel.app",
+    //     methods: ["POST", "GET", "PUT", "DELETE"],
+    //     allowedHeaders: ['Content-Type'],
+    //     credentials: true
+    // }
 ));
 app.use("/financial-records", financialRecordRouter);
 
